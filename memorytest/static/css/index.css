@@ -1,0 +1,53 @@
+body {
+    background-image: url("brain.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.instructions {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+#retryButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#retryButton:hover {
+    background-color: #45a049;
+}
+
+footer {
+    margin-top: 520px;
+    font-size: 0.9em;
+    margin-left: -300px;
+    margin-bottom: 50px;
+
+}
+
+.instagram-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+.congratulations-container {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    color: #4CAF50;
+    animation: zoomIn 0.5s ease-in-out;
+}
+
+p {
+    font-size: 1.5em;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.go {
+    font-size: 1em;
+    color: white;
+    background: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    animation: fadeIn 2s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.go:hover {
+    background: #45a049;
+}
+
+.confetti {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: #FFC107;
+    opacity: 0.7;
+    transform-origin: top left;
+    animation: fall linear infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}

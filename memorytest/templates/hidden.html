@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden</title>
+    <link rel="stylesheet" href="{% static 'css/hidden.css' %}">
+
+</head>
+
+<body>
+
+    <div class="cards">
+        {% for item, idnumber in items_with_numbers %}
+        <a href="{% url 'check' item.id %}">
+            <div class="card">
+                <h4 class="number">{{ idnumber }}</h4>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

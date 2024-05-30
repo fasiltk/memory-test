@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations Page</title>
+    <link rel="stylesheet" href="{% static 'css/win.css' %}">
+    <script src="{% static 'js/win.js' %}"></script>
+</head>
+
+<body>
+    <div class="text">
+        <p></p>
+    </div>
+    <div class="congratulations-container">
+        <h1>Congratulations!</h1>
+        <p>You have successfully completed the challenge!</p>
+        <div class="confetti"></div>
+        <a href="{% url 'display' %}"><button class="go">Try again</button></a>
+    </div>
+</body>
+
+</html>

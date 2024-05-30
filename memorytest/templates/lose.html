@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Lose</title>
+    <link rel="stylesheet" href="{% static 'css/lose.css' %}">
+    <script src="{% static 'js/lose.js' %}"></script>
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <div class="message">
+            <h1>You Lose</h1>
+            <p>Better luck next time! <br>
+                ഇതൊക്കെ ശ്രദ്ധിക്കേണ്ടെ അമ്പാനെ
+            </p>
+            <a href="{% url 'display' %}"><button id="retryButton">Try Again</button></a>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="{% static 'css/display.css' %}">
+</head>
+
+<body>
+    <div class="cards">
+        {% for item in items %}
+        <div class="card" style="width: 18rem;">
+            <h4 class="number">{{ forloop.counter }}</h4>
+            <div class="image">
+                <img src="{{ item.photo.url }}" class="card-img-top" alt="Image of {{ item.name }}" />
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <script>    setTimeout(function () {
+            window.location.href = "{% url 'item' %}";
+        }, 30000); // 30000 milliseconds = 30 seconds
+    </script>
+</body>
+
+</html>

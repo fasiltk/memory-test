@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.png");
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.card {
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
