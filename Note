@@ -1,0 +1,9 @@
+link : https://tkfasil.pythonanywhere.com/
+This is a memory test game .
+You will see 12 images, each image under a number from 1 to 12. 
+You have 30 seconds to memorize which image is under each number.
+After 30 seconds, only one image will be shown to you.
+You have 10 seconds to remember which number had this image.
+After 10 seconds, you'll see the numbers from 1 to 12 again.
+Click on the number that you think had the image you saw earlier.
+If you choose the correct number, you win. If not, you lose.
