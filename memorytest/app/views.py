@@ -1,28 +1,3 @@
-# from django.shortcuts import render
-# from .models import Test
-# from django.db.models import Count
-# import random
-
-# def index(request):
-#     return render(request, "index.html")
-
-# def display(request):
-#     items = Test.objects.order_by('?')
-#     if items:
-#         request.session['idnumberr']=items
-#     return render(request, "display.html", {'items': items})
-
-# def item(request):
-#     count = Test.objects.aggregate(count=Count('id'))['count']
-#     random_index = random.randint(0, count - 1)
-#     item = Test.objects.all()[random_index]
-#     return render(request, "item.html", {'item': item})
-
-# def hidden(request):
-#     items = Test.objects.order_by('?')
-#     idnumber=request.session.get('idnumber')
-#     print(idnumber)
-#     return render(request, "hidden.html", {'items': items, 'idnumber': idnumber})
 from django.shortcuts import render,redirect
 from .models import Test
 from django.db.models import Count
